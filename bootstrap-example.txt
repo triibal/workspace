@@ -1,3 +1,1 @@
 knife bootstrap --node-name EXAMPLENAME --ssh-user USER --ssh-password PASSWORD AA.BB.CC.DD
-
-# run command to bootstrap node to chef server from chef workstation
