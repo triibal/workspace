@@ -1,0 +1,1 @@
+knife bootstrap --node-name EXAMPLENAME --ssh-user USER --ssh-password PASSWORD AA.BB.CC.DD
