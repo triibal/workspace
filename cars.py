@@ -39,7 +39,6 @@ remainingTrips()
 class xcar(object):
     def __init__(self):
         self.passengers = 0
-        #latitude longtitude pair
         self.location = [14.11, 13.11]
         direction = ['NW']
         driverOnline = 1
@@ -53,14 +52,8 @@ class xcar(object):
         return self.passengers
 
     def setPassengers(self):
-        print "enter a value for the remote address and port"
+        print "enter a value for the passengers"
         tempPassengers = raw_input()
         self.passengers = int(tempPassengers)
 
-# route optimization - new file and classes
-
-newCar = xcar()
-
-newCar.getPassengers()
-newCar.setPassengers()
-newCar.getPassengers()
+# route optimization and other cool stuff
