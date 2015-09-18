@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/python
 
 # route class should compare drivers with passengers classes to determine closest radius
 # should dispatch driver to passengers

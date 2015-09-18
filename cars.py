@@ -40,11 +40,11 @@ class xcar(object):
     def __init__(self):
         self.passengers = 0
         self.location = [14.11, 13.11]
-        direction = ['NW']
-        driverOnline = 1
-        hoursLoggedIn = 3
-        lastFare = 0.25
-        lastFareValue = 8.50
+        self.direction = ['NW']
+        self.selfdriverOnline = 1
+        self.hoursLoggedIn = 3
+        self.lastFare = 0.25
+        self.lastFareValue = 8.50
 
 # define setter and getter for remote_addr_w_port
     def getPassengers(self):
