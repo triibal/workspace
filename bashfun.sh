@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# this script will accept a username to remove
+
+echo "*****Script by Patrick Daly*****"
+echo -n "******** Sanitize users ********"
+echo -n
+
+read newVar
+echo "you would like to clear $newVar"
+echo $newVar >> sanitize-log.txt
+
 input=$1
 input2=$2
 
