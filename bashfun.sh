@@ -10,6 +10,13 @@ read newVar
 echo "you would like to clear $newVar"
 echo $newVar >> sanitize-log.txt
 
+if [ `grep $newVar sanitize-log.txt | wc -l` -eq 1]
+then
+    echo "something"
+else
+    echo "something"
+fi
+
 input=$1
 input2=$2
 
@@ -25,7 +32,7 @@ function second_function {
 
 }
 
-function input_function {
+input_function() {
   echo "the name you gave me is: $1"
 }
 
