@@ -10,6 +10,7 @@ xab = [1,2,3,4,5,6]
 # Find the only element in an array that only occurs once.
 
 def uniqueCount():
+    """ Find the elements in an array that occur once"""
     for f in xaa:
         count = xaa.count(f)
         if count == 1:
@@ -18,10 +19,12 @@ def uniqueCount():
             print "value not unique"
 
 uniqueCount()
+print uniqueCount.__doc__
 
 # Find the most frequent integer in an array
 
 def frequentCount():
+    """ Find the most frequent integer in an array"""
     fCount = 0
     fIndex = 0
     for f in xaa:
@@ -41,6 +44,9 @@ frequentCount()
 # Find pairs in an integer array whose sum is equal to 10
 
 def findPairs():
+    """ Find pairs in an integer array whose sum is equal to 10
+    returns the pair
+    """
     for f in xaa:
         for g in xaa:
             #print "values %d %d" % (f, g)
@@ -55,6 +61,9 @@ findPairs()
 # Find the common elements of 2 int arrays
 
 def findCommon():
+    """ Find the common elements of 2 int arrays
+    returns the pair
+    """
     for f in xaa:
         for g in xab:
             if f == g:
@@ -66,6 +75,9 @@ findCommon()
 
 print "xaa is {}".format(xaa)
 def removeRecurse():
+    """ a function that will remove elements from an array recursively
+    function does not return any values
+    """
     if xaa != []:
         xaa.pop()
         removeRecurse()
