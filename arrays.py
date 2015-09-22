@@ -1,15 +1,11 @@
 #!/bin/env/python
 # import any required libraries
-
+# none required
 
 ### Working with Arrays
 
-
 xaa = [1,1,2,3,2,2,4,5,7]
 xab = [1,2,3,4,5,6]
-
-# for f in xaa:
-#    print f
 
 # Find the only element in an array that only occurs once.
 
@@ -24,7 +20,6 @@ def uniqueCount():
 uniqueCount()
 
 # Find the most frequent integer in an array
-
 
 def frequentCount():
     fCount = 0
@@ -43,7 +38,7 @@ def frequentCount():
 
 frequentCount()
 
-# Find pairs in an integer array whose sum is equal to 10 (bonus: do it in linear time)
+# Find pairs in an integer array whose sum is equal to 10
 
 def findPairs():
     for f in xaa:
@@ -67,12 +62,15 @@ def findCommon():
 
 findCommon()
 
-# strings
-print xaa.pop()
-xaa.append(1)
-xaa.append(7)
-xaa.pop()
-print xaa
-xaa.length()
+# write a program that will remove elements from an array recursively
+
+print "xaa is {}".format(xaa)
+def removeRecurse():
+    if xaa != []:
+        xaa.pop()
+        removeRecurse()
+
+removeRecurse()
+print "xaa is {}".format(xaa)
 
 # Write a function that prints out the binary form of an int

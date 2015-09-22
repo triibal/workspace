@@ -54,3 +54,17 @@ case $input in
       echo "You didn't select a valid option"
     ;;
 esac
+
+for user in `cat $file`
+do
+    if [ "$action" == "add" ]
+      then
+        echo adding user: $user
+        useradd $user -m -ppassword
+    fi
+    if [ "$action" == "del" ]
+      then
+        echo deleting user: $user
+        userdel -r $user
+    fi
+done
