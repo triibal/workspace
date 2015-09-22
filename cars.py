@@ -1,28 +1,6 @@
 #!/usr/bin/python
 # python cars file for uber
 
-# if there are 1000 drivers who want to earn 200 and they must complete 35 trips
-# and there are 25000 trips in a given day and 600 drivers earn 200
-# calculate the average earnings of the other drivers
-# and the surge pricing required for the other drivers to earn 200
-
-drivers = 1000
-riders = 25000
-
-def remainingTrips():
-    remainder = riders - (drivers*.6)*35
-    avgEarnings = 200.00/35.00
-    print remainder
-    print avgEarnings
-    surgeTarget = 400 * 200
-    lowTarget = remainder * avgEarnings
-    deltaTarget = surgeTarget - lowTarget
-    print deltaTarget
-    surgePrice = surgeTarget / lowTarget
-    print surgePrice
-
-remainingTrips()
-
 # supply and demand for surge pricing on Uber
 # work out when the surge price should take effect
 # given a current number of drivers and riders, what if riders suddenly spikes at certain times
@@ -34,7 +12,6 @@ remainingTrips()
 # avg trip time of 5 minutes
 # work out how many trips cab be completed within 1 hour
 # work out surge pricing
-
 
 class xcar(object):
     def __init__(self):
@@ -57,3 +34,25 @@ class xcar(object):
         self.passengers = int(tempPassengers)
 
 # route optimization and other cool stuff
+
+# if there are 1000 drivers who want to earn 200 and they must complete 35 trips
+# and there are 25000 trips in a given day and 600 drivers earn 200
+# calculate the average earnings of the other drivers
+# and the surge pricing required for the other drivers to earn 200
+
+drivers = 1000
+riders = 25000
+
+def remainingTrips():
+    remainder = riders - (drivers*.6)*35
+    avgEarnings = 200.00/35.00
+    print remainder
+    print avgEarnings
+    surgeTarget = 400 * 200
+    lowTarget = remainder * avgEarnings
+    deltaTarget = surgeTarget - lowTarget
+    print deltaTarget
+    surgePrice = surgeTarget / lowTarget
+    print surgePrice
+
+remainingTrips()
